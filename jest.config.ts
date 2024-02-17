@@ -1,14 +1,5 @@
-/**
- * For a detailed explanation regarding each configuration property, visit:
- * https://jestjs.io/docs/configuration
- */
-
-// @ts-ignore
 import type { Config } from "jest";
 
-const config: Config = {
-  resetMocks: true,
-  coverageDirectory: "coverage",
-};
+const config: Config = {};
 
 export default config;
