@@ -9,7 +9,6 @@ import type { Config } from "jest";
 const config: Config = {
   resetMocks: true,
   coverageDirectory: "coverage",
-  testEnvironment: "jsdom",
 };
 
 export default config;
