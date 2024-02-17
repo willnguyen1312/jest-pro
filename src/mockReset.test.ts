@@ -1,7 +1,7 @@
 import { sum } from "./sum";
 import { useSum } from "./useSum";
 
-jest.mock("../src/sum");
+jest.mock("./sum");
 
 beforeEach(() => {
   jest.resetAllMocks();
