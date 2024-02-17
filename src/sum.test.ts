@@ -4,17 +4,15 @@ import { useSum } from "./useSum";
 jest.mock("../src/sum");
 
 describe("sum module", () => {
-  const mockSum = jest.mocked(sum);
   test("works", () => {
-    mockSum.mockReturnValue(5);
-    expect(mockSum(1, 2)).toBe(5);
+    jest.mocked(sum).mockReturnValue(5);
+    expect(sum(1, 2)).toBe(5);
   });
 });
 
 describe("useSum module", () => {
   test("works", () => {
-    const mockSum = jest.mocked(sum);
-    mockSum.mockReturnValue(30);
+    jest.mocked(sum).mockReturnValue(30);
     expect(useSum(1, 2)).toBe(30);
   });
 });
