@@ -12,6 +12,8 @@ describe("sum module", () => {
     jest.spyOn(sumModule, "sum").mockImplementation(() => 5);
     expect(sumModule.sum(1, 2)).toBe(5);
     expect(sumModule.sum).toHaveBeenCalledTimes(1);
+
+    expect(sumModule.sayHello()).toBe("Hello!");
   });
 });
 
